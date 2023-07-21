@@ -26,6 +26,7 @@
             android:textStyle="bold" />
 
         <ImageButton
+            android:onClick="btnBackOnclick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_back"
@@ -34,8 +35,9 @@
 
     <EditText
         android:id="@+id/edUsername"
+        android:background="@color/white"
         android:layout_width="250dp"
-        android:layout_height="25dp"
+        android:layout_height="45dp"
         android:layout_marginTop="50dp"
         android:hint="@string/username"
         android:backgroundTint="@color/white"
@@ -44,10 +46,10 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
     <EditText
-        android:backgroundTint="@color/white"
+        android:background="@color/white"
         android:id="@+id/edEmail"
         android:layout_width="250dp"
-        android:layout_height="25dp"
+        android:layout_height="45dp"
         android:layout_marginTop="50dp"
         android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,9 +58,9 @@
 
     <EditText
         android:id="@+id/edPassword"
-        android:backgroundTint="@color/white"
+        android:background="@color/white"
         android:layout_width="250dp"
-        android:layout_height="25dp"
+        android:layout_height="45dp"
         android:layout_marginTop="50dp"
         android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,6 +100,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/owl" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
